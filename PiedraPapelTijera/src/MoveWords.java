@@ -1,14 +1,22 @@
 import java.util.Random;
 
 public class MoveWords{
+	
+	
 
-    public static final int EMPATE = 0;
+    private static final String SPOCK = "SEPIA";
+	private static final String LAGARTIJA = "TORITO";
+	
+	public static final int EMPATE = 0;
     public static final int GANA = 1;
     public static final int PIERDE = 2;
+    
+    
 
-    private static final String[] validMoves = {"TIJERAS", "PAPEL", "PIEDRA","SPOCK","LAGARTIJA"};
+    private static final String[] validMoves = {"TIJERAS", "PAPEL", "PIEDRA",SPOCK,LAGARTIJA};
     private static final String[] validCommands = {"SALIR", "HELP"};
 
+    
     private Random rnd;
     
     public MoveWords(){
